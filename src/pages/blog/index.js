@@ -12,7 +12,6 @@ const BlogPage = ({ data }) => {
             <Link to={`/blog/${node.slug}`}>{node.frontmatter.title}</Link>
           </h2>
           <p>Posted: {node.frontmatter.date}</p>
-          <MDXRenderer>{node.body}</MDXRenderer>
         </article>
       ))}
     </Layout>
